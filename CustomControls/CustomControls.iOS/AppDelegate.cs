@@ -2,6 +2,10 @@
 using System.Linq;
 using System.Collections.Generic;
 
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+
 using Foundation;
 using UIKit;
 
@@ -24,6 +28,8 @@ namespace CustomControls.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
+
+            AppCenter.Start("fa985723d3d5e38e61cd9e5f4641c180cdd281c7", typeof(Analytics), typeof(Crashes));
 
             return base.FinishedLaunching(app, options);
         }
