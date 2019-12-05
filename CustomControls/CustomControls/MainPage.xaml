@@ -5,12 +5,29 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="CustomControls.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="text" TargetType="Label">
+
+                <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.Platforms>
+
+                        <On Platform="iOS" Value="IOS"/>
+                        <On Platform="Android" Value="DROID"/>
+
+                    </OnPlatform.Platforms>
+                </OnPlatform>
+
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        
+        <Label Style="{StaticResource text}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        
     </StackLayout>
 
 </ContentPage>
