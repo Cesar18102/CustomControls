@@ -1,0 +1,9 @@
+/.vs
+/CustomControls/CustomControls/bin
+/CustomControls/CustomControls/obj
+
+/CustomControls/CustomControls.Android/bin
+/CustomControls/CustomControls.Android/obj
+
+/CustomControls/CustomControls.iOS/bin
+/CustomControls/CustomControls.iOS/obj
