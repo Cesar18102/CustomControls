@@ -1,6 +1,11 @@
 ﻿using System;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace CustomControls
 {
@@ -15,7 +20,7 @@ namespace CustomControls
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            AppCenter.Start("ios=fa985723d3d5e38e61cd9e5f4641c180cdd281c7;", typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnSleep()
