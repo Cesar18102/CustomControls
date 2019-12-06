@@ -20,7 +20,7 @@ namespace CustomControls
 
         protected override void OnStart()
         {
-            AppCenter.Start("ios=fa985723d3d5e38e61cd9e5f4641c180cdd281c7;", typeof(Analytics), typeof(Crashes));
+            AppCenter.Start("ios=b9d7802f79624f3603070ba030df3f2a1b2c8b5b;", typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnSleep()
